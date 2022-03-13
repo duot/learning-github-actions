@@ -11,7 +11,7 @@ on:
 
 jobs:
   push-only-job:
-    if: github.event_name == "push"
+    if: github.event_name == 'push'
     runs-on: ubuntu-latest
     steps:
       - run: echo "This job was triggred on ${{ github.event_name }} event"
